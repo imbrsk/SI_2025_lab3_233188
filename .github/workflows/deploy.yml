@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Show Branch Name
         run: |
-    echo "Current branch: ${{ github.ref_name }}"
+          echo "Current branch: ${{ github.ref_name }}"
       - name: Build Docker Image
         run: |
           IMAGE_TAG=${{ secrets.DOCKER_USERNAME }}/si-2025-lab3:${{ github.ref_name }}-latest
