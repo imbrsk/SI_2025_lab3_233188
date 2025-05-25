@@ -7,12 +7,12 @@ on:
       - feature
 
 jobs:
-  lint-html:
+   lint-html:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Lint HTML
-        uses: Cyb3r-Jak3/html5validator-action@v0.5.0
+        uses: Cyb3r-Jak3/html5validator-action@v0.4.0
 
   docker-build:
     runs-on: ubuntu-latest
